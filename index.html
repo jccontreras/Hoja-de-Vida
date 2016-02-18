@@ -1,0 +1,339 @@
+<HTML>
+<HEAD>
+<TITLE>
+Hoja de Vida
+</TITLE>
+<LINK REL=StyleSheet HREF="C:\Users\Juan Camilo C\Documents\UnBosque\Programacion II\HV\css\style.css" TYPE="text/css">
+<script type="text/javascript" language="javascript" src="C:\Users\Juan Camilo C\Documents\UnBosque\Programacion II\HV\js\validacion.js"></script>
+</HEAD>
+<BODY >
+<h1><P ALIGN=CENTER>Hoja de Vida</P></h1>
+<hr>
+<h4>Informaci&#243n Personal</h4>
+<FORM method="POST" onSubmit="return validacion();">
+	<table >
+	<tr>
+	<td>
+	<table >
+		<tr>
+			<td>
+					<label> *Usuario    </label> 
+			</td>
+			<td>
+					<input type="text" id="user" maxlength="8" size="5"></input>  
+			</td>
+			<td>
+					<label>* Clave    </label>  
+			</td>
+			<td>
+					<input type="password" id="password" maxlength="8" size="5"></input>
+			</td>
+		<tr><td>
+			<input type="hidden" name="sitio" value="virtualnauta"><br>
+		</td></tr>
+		<tr>
+			<td>
+					<label>*Nombres</label>
+			</td>
+			<td>
+					 <input type="text" id="name"></input>
+			</td>
+			<td>
+					<label>*Apellidos</label> 
+			<td>
+					<input type="text" id="lastname"></input>
+			</td>
+		</tr>
+		<tr><td>
+			<input type="hidden" name="sitio" value="virtualnauta"><br>
+		</td></tr>
+		<tr>
+			<td>
+			    <label>Lugar de Nacimiento</label>
+			</td>
+			<td>
+					<select name="Ciudades">
+						<option name="bog" selected>Bogot&#225</option>
+						<option name="cal" >Cali</option>
+						<option name="pas" >Pasto</option>
+						<option name="cart">Cartagena</option>
+					</select>
+			</td>
+			<td>
+				<label>*Correo</label>
+			</td>
+			<td>
+				<input type="text" id=email></input>
+			</td>
+		</tr>
+		<tr><td>
+			<input type="hidden" name="sitio" value="virtualnauta"><br>
+		</td></tr>
+		<tr>
+			<td>
+				<label>Fecha de Nacimiento</label>
+			</td>
+			<td>
+					<input type="text" maxlength="2" name="dd" size="1" ></input>
+					<label>/</label>
+					<input type="text" maxlength="2" name="MM" size="1"></input>
+					<label>/</label>
+					<input type="text" maxlength="4" name="aa" size="1"></input>
+			<td>
+					<label>N&#250mero de documento</label>
+			</td>
+			<td>
+					<input type="text" name="Id" maxlength="20"></input>
+			</td>
+		</tr>
+		<tr><td>
+			<input type="hidden" name="sitio" value="virtualnauta"><br>
+		</td></tr>
+		<tr>
+			<td>
+					<label>Telefono</label>
+			</td>
+			<td>
+					<input type="text" name="tel" maxlength="7" size="5"></input>
+			</td>
+			<td>
+					<label>Direcci&#243n</label>
+			</td>
+			<td>
+					<input type="text" name="add" size="20"></input>
+			</td>
+		</tr>
+		<tr><td>
+			<input type="hidden" name="sitio" value="virtualnauta"><br>
+		</td></tr>
+		<tr>
+			<td>
+				<label>Estado Civil</label>
+			</td>
+			<td>
+				<input type="RADIO" name="eCiv" checked> Soltero
+			</td>
+			<td>
+				<input type="RADIO" name="eCiv"> Casado
+			</td>
+			<td>
+				<input type="RADIO" name="eCiv"> Union Libre
+			</td>
+			<td>
+				<input type="RADIO" name="eCiv"> Divorsiado
+			</td>
+			<td>
+				<input type="RADIO" name="eCiv"> Viudo
+			</td>
+		</tr>
+		</tr>
+</table>
+</td>
+	<td>
+	<table>
+		<tr>
+			<td>
+				<p>Foto</p>
+				<p><img src="C:\Users\Juan Camilo C\Documents\UnBosque\Programacion II\HV\Imagenes\perfil.jpg" width="300" height="150"></p>
+				<p>Examinar</p>
+			</td>
+		<tr>
+		<tr>
+			<td>
+				<p><label>Perfil Profesional</label></p>
+				<p><textarea cols="20" rows="10" name="habilidades" maxlength="100"></textarea></p>
+			</td>
+		</tr>
+	</table>
+	</td>
+</tr>
+</table>
+<hr>
+<h4>Informaci&#243n Academica</h4>
+<input type="hidden" name="sitio" value="virtualnauta"><br>
+	<table>
+	<tr>
+	<td>
+	<table name="educacion">
+		<tr>
+			<td>
+				<label>Fecha de inicio</label>
+			</td>
+			<td>
+				<label>Fecha terminacion</label>
+			</td>
+			<td>
+				<label>Institucion educativa</label>
+			</td>
+			<td>
+				<label>Titulo</label>
+			</td>
+		</tr>
+
+	</table>
+	</td>
+	</tr>
+	</table>
+	<input type="hidden" name="sitio" value="virtualnauta"><br>
+	<table>
+		<tr><td>
+		<table>
+			<tr>
+				<td>
+						<label>*Fecha de inicio</label>
+				</td>
+				<td>
+					<input type="text" id="fechaInDD" size="1" maxlength="2"></input>
+					<label>/</label>
+					<input type="text" id="fechaInMM" size="1" maxlength="2"></input>
+					<label>/</label>
+					<input type="text" id="fechaInAA" size="1" maxlength="4"></input>
+				</td>
+				<td>
+					<label>Fecha de Terminacion</label>
+					<input type="hidden" name="sitio" value="virtualnauta"><br>
+		
+				</td>
+				<td>
+					<input type="text" id="fechaTeDD" size="1" maxlength="2"></input>
+					<label>/</label>
+					<input type="text" id="fechaTeMM" size="1" maxlength="2"></input>
+					<label>/</label>
+					<input type="text" id="fechaTeAA" size="1" maxlength="4"></input>
+					<input type="hidden" name="sitio" value="virtualnauta"><br>
+				</td>
+				<td>
+					<label>Actaulmente</label>
+					<input type="hidden" name="sitio" value="virtualnauta"><br>
+				</td>
+				<td>
+					<input type="checkbox" name="act"  onclick="document.FORM.fechaTeDD.disable=this.checked;"></input>
+				</td>
+			</tr>
+			<tr><td>
+			<input type="hidden" name="sitio" value="virtualnauta"><br>
+			</td></tr>
+			<tr>
+				<td>
+					<label>*Institucion</label>
+				</td>
+				<td>
+					<select name="inst">
+						<option name="ueb" selected>Universidad El Bosque</option>
+						<option name="usa">Universidad Sergio Arboleda</option>
+						<option name="un">Universidad Nacional</option>
+						<option name="ust">Universidad Santo Tomas</option>
+						<option name="ud">Universidad Distrital</option>
+						<option name="uee">Universidad El Externado</option>
+						<option name="ula">Universidad Los Andes</option>
+					</select>
+					<input type="hidden" name="sitio" value="virtualnauta"><br>
+				</td>
+				<td>
+					<label>*Titulo</label>
+					<input type="hidden" name="sitio" value="virtualnauta"><br>
+				</td>
+				<td>
+					<input type="text" id="titulo" size="20"></input>
+				</td>
+			</tr>
+		</table>	
+		</td></tr>	
+	</table>
+	<hr>
+	<h4>Experiencia</h4>	
+	<input type="hidden" name="sitio" value="virtualnauta"><br>
+	<table>
+	<tr>
+	<td>
+	<table name="trabajos">
+		<tr>
+			<td>
+				<label>Fecha de inicio</label>
+			</td>
+			<td>
+				<label>Fecha terminacion</label>
+			</td>
+			<td>
+				<label>Institucion educativa</label>
+			</td>
+			<td>
+				<label>Titulo</label>
+			</td>
+		</tr>
+
+	</table>
+	</td>
+	</tr>
+	</table>
+	<input type="hidden" name="sitio" value="virtualnauta"><br>
+	<table >
+		<tr><td>
+		<table>
+			<tr>
+				<td>
+						<label>*Fecha de inicio</label>
+				</td>
+				<td>
+					<input type="text" id="fechaIn2DD" size="1" maxlength="2"></input>
+					<label>/</label>
+					<input type="text" id="fechaIn2MM" size="1" maxlength="2"></input>
+					<label>/</label>
+					<input type="text" id="fechaIn2AA" size="1" maxlength="4"></input>
+				</td>
+				<td>
+					<label>Fecha de Terminacion</label>
+					<input type="hidden" name="sitio" value="virtualnauta"><br>
+		
+				</td>
+				<td>
+					<input type="text" name="fechaTe2DD" size="1" maxlength="2"></input>
+					<label>/</label>
+					<input type="text" name="fechaTe2MM" size="1" maxlength="2"></input>
+					<label>/</label>
+					<input type="text" name="fechaTe2AA" size="1" maxlength="4"></input>
+					<input type="hidden" name="sitio" value="virtualnauta"><br>
+				</td>
+				<td>
+					<label>Actaulmente</label>
+					<input type="hidden" name="sitio" value="virtualnauta"><br>
+				</td>
+				<td>
+					<input type="checkbox" name="act2"></input>
+				</td>
+			</tr>
+			<tr><td>
+			<input type="hidden" name="sitio" value="virtualnauta"><br>
+			</td></tr>
+			<tr>
+				<td>
+					<label>*Empresa</label>
+				</td>
+				<td>
+					<select name="inst">
+						<option name="ueb" selected>Universidad El Bosque</option>
+						<option name="mic">Microsoft</option>
+						<option name="ibm">IBM</option>
+						<option name="hp">Hewlet Packad</option>
+						<option name="len">Lenovo</option>
+						<option name="goo">Google</option>
+						<option name="fac">FaceBook</option>
+					</select>
+					<input type="hidden" name="sitio" value="virtualnauta"><br>
+				</td>
+				<td>
+					<label>*Cargo</label>
+					<input type="hidden" name="sitio" value="virtualnauta"><br>
+				</td>
+				<td>
+					<input type="text" id="cargo" size="20"></input>
+				</td>
+			</tr>
+		</table>	
+		</td></tr>	
+	</table>
+	<p align="center"> <input type="submit" value="guardar"></input></p>
+</FORM>
+</div>
+</BODY>
+</HTML>

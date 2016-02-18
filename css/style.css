@@ -1,0 +1,13 @@
+body {
+    background-color: blue;
+    color: white;
+   
+}
+
+h1,h4{
+	font-family: "Homer Simpson", cursive;
+	font-size-adjust: 150%;
+}
+label{
+	 font-family: monospace;
+}
